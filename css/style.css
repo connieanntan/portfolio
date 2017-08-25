@@ -1,0 +1,326 @@
+/* Grid */
+
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+body {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class^='col-'] {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-md-3 {
+    width: calc( 100% * 3 / 12);
+}
+
+.col-md-6 {
+    width: calc( 100% * 6 / 12);
+}
+
+
+/* general */
+
+
+/* primary: orange */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    color: #333;
+}
+
+@media screen and ( min-width: 601px) {
+    .my-name {
+        font-size: 10px;
+    }
+}
+
+.my-name {
+    font-size: 45px;
+}
+
+@media screen and ( max-width: 1000px) {
+    .my-name {
+        font-size: 30px;
+    }
+}
+
+.my-position {
+    font-size: 20px;
+}
+
+
+/* navbar */
+
+body {
+    padding-top: 50px;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background: rgba(178, 60, 81, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+}
+
+.navbar-header {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin: ;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 50px;
+    color: white;
+    font-size: 17px;
+}
+
+@media screen and ( max-width: 1000px) {
+    a {
+        font-size: 14px;
+        margin: 20px;
+    }
+}
+
+.navbar-brand,
+.navbar-list>li>a {
+    text-decoration: none;
+}
+
+
+/* header */
+
+.header-img {
+    width: 280px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-left: 200px;
+}
+
+@media screen and ( max-width: 1000px) {
+    .header-img {
+        width: 200px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and ( max-width: 640px) {
+    .header-img {
+        width: 150px;
+        margin-left: 25px;
+    }
+}
+
+header {
+    background-color: rgba(239, 214, 169, 0.54);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /* padding: 50px 0 */
+}
+
+
+/* introSection */
+
+#Section {
+    width: 100%;
+    background-color: rgba(178, 60, 81, 0.5);
+}
+
+[id^='Seperation'] {
+    float: right;
+    height: 45px;
+}
+
+
+}
+.icon {
+    color: orange;
+}
+
+/* imageSection */
+#imageSection {
+    width: 100%;
+}
+[id^='photoImg']>h4 {
+    color: white;
+    text-align: center;
+    line-height: 220px;
+    margin: 0;
+    font-size: 6px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+[id^='photoImg']:hover {
+    filter: grayscale(0%);
+}
+[id^='photoImg']:hover>h4 {
+    font-size: 24px;
+    opacity: 1;
+}
+[id^='photoImg'] {
+    height: 290px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: all .5s ease;
+}
+[id^='photoImg']>h4 {
+    color: rgb(209, 140, 152);
+    text-shadow: 50;
+    text-align: left;
+    padding-top: 120px;
+    line-height: 290px;
+    margin: 0;
+    font-size: 6px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+[id^='photoImg']:hover {
+    filter: grayscale(0%);
+}
+[id^='photoImg']:hover>h4 {
+    font-size: 24px;
+    opacity: 1;
+}
+.col-md-3 {}
+@media screen and ( max-width: 1000px) {
+    .col-md-3 {
+        width: 50%;
+        height: 390px;
+    }
+}
+#photoImg1 {
+    background-image: url('../img/shape.png');
+}
+#photoImg2 {
+    background-image: url('../img/cv.png');
+}
+#photoImg3 {
+    background-image: url(../img/chA.png);
+}
+#photoImg4 {
+    background-image: url(../img/JACK.png);
+}
+#photoImg5 {
+    background-image: url(../img/T-SHIRT.png);
+}
+#photoImg6 {
+    background-image: url(../img/YEARBOOK.png);
+}
+#photoImg7 {
+    background-image: url(../img/journey.png);
+}
+#photoImg8 {
+    background-image: url(../img/public%20art.png);
+}
+#phtoImg9 {
+    background-image: url('https://unsplash.it/220/220?image=999');
+}
+
+/* footer */
+footer {
+    background: rgba(178, 60, 81, 0.5);
+    padding: 10px 0;
+    text-align: center;
+}
+footer>h1 {
+    color: white;
+}
+.footer {
+    text-align: left;
+    padding: 1px 30px;
+}
+p {
+    color: white;
+}
+
+/* chat-component */
+.chat-component {
+    /* position: static; */
+    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.toggle-chatroom {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+    background: white;
+    color: orange;
+    border-style: none;
+    position: relative;
+    z-index: 200;
+}
+.chatroom {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: white;
+    bottom: 50px;
+    right: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+    z-index: 180;
+    display: none;
+}
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    background: #eee;
+}
+.messages>li {
+    padding: 12px;
+}
+.messages>li>span {
+    padding: 5px 10px;
+    background: white;
+}
+.messages>li:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.messages>li.client>span {
+    float: right;
+    background: orange;
+    color: white;
+}
+.chatroom-input-group {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+.chatroom-input-group>input {
+    width: 100%;
+    height: 30px;
+    display: block;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+}
